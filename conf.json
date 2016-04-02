@@ -1,0 +1,8 @@
+{"stacks" : {
+    "Shared_Dev_XP": "6ddbbdfc-a733-40af-977c-5cb0d9519701",
+    "StageXP": "07f20412-23f8-4678-a01f-b7a57c5150e7",
+    "ProdXP": "c5d42cad-8e18-4c1f-ac96-a0b7d161be6f"
+},
+  "components" : ["cep", "cct", "mdw", "segments", "xedcp"],
+  "ssh_username": "jkolios"
+}
