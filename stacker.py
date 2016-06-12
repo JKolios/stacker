@@ -44,9 +44,9 @@ def main(argv):
     addresses = [instance['PrivateIp'] for instance in needed_instances]
 
     commands = ['ssh {username}@{address}'.format(username=conf['ssh_username'], address=add) for add in addresses]
+    print "Generated SSH commands:{}".format(commands)
 
-    for command in commands:
-        sh.bash('{folder}/tab.sh'.format(folder=local_folder), command)
+    sh.osascript('{folder}/ssh_tabs.scpt'.format(folder=local_folder), *commands)
 
 
 if __name__ == '__main__':
